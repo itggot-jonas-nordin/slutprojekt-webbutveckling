@@ -1,17 +1,5 @@
-.container {
-	font-family: 'Lato';
-}
-
-
-
-
-/* HEADER STYLING !!! ____________________________________________________________________________*/
-
-
-/* MENU __________________________________________________________________________________________*/
-
 .material-icons.menu-icon {
-	float: right;
+	grid-column: span 1;
 	margin: auto;
 	font-size: 6vh;
 	cursor: pointer;
@@ -29,23 +17,21 @@
 }
 
 .menu-items {
-	height: 36vh;
+	height: 150vh;
 	background-color: rgb(220, 220, 220);
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(12, 1fr);
+	grid-template-rows: repeat(18, 1fr);
 	opacity: 0.95;
-	border-radius: 30px 0px 0px 30px;
-	border: 1vh solid darkgrey;
-	border-right-style: hidden;
 }
 
 .material-icons.right-arrow {
 	grid-column: span 1;
 	grid-row: span 1;
-	font-size: 4vh;
+	margin: auto;
+	font-size: 3vw;
 	cursor: pointer;
-	margin: 1vh auto auto auto;
+	margin: auto auto auto 1.5vw;
 }
 
 
@@ -57,14 +43,13 @@
 	position: absolute;
 	z-index: 5;
 }
-
 .choices {
 	grid-column: span 4;
 	grid-row: 2/10;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(6, 1fr);
-	grid-row-gap: 3.5vh;
+	grid-row-gap: 4vw;
 }
 
 
@@ -84,7 +69,6 @@ a {
 	color: black;	
 }
 
-/* MENU _______________________________________________________________________________________END */
 
 
 

@@ -1,0 +1,95 @@
+.container {
+	font-family: 'Lato';
+}
+
+
+
+
+/* HEADER STYLING !!! ____________________________________________________________________________*/
+
+
+/* MENU __________________________________________________________________________________________*/
+
+.material-icons.menu-icon {
+	float: right;
+	margin: auto;
+	font-size: 6vh;
+	cursor: pointer;
+}
+
+.menu {
+	position: absolute;
+	right: 0;	
+	margin-top: 6vh;
+	margin-left: 100vw;
+	width: 0;
+	opacity: 0;
+	transition: ease-in 0.7s;
+	z-index: 5;
+}
+
+.menu-items {
+	height: 36vh;
+	background-color: rgb(220, 220, 220);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+	opacity: 0.95;
+	border-radius: 30px 0px 0px 30px;
+	border: 1vh solid darkgrey;
+	border-right-style: hidden;
+}
+
+.material-icons.right-arrow {
+	grid-column: span 1;
+	grid-row: span 1;
+	font-size: 4vh;
+	cursor: pointer;
+	margin: 1vh auto auto auto;
+}
+
+
+.show-menu {
+	margin-left: 0;
+	width: 20vw;
+	opacity: 1;
+	transition: ease-out 0.7s;
+	position: absolute;
+	z-index: 5;
+}
+
+.choices {
+	grid-column: span 4;
+	grid-row: 2/10;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-row-gap: 3.5vh;
+}
+
+
+.choices > li {
+	font-size: 130%;
+	grid-column: span 3;
+	grid-row: span 1;
+	list-style-type: none;
+}
+
+.choices > li > a:visited {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: black;	
+}
+
+/* MENU _______________________________________________________________________________________END */
+
+
+
+@media only screen and (max-device-width: 750px){
+	
+	
+}
+
