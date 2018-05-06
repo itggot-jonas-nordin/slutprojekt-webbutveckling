@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>IFK Göteborg</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	      rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
+	<link rel="icon" href="favicon.png" type="image/png"/>
+	<link rel="shortcut icon" href="favicon.png" type="image/png"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
 </head>
 
 <body>
 	<div class="container">
-
 		<header>
+			<h1 class="header-text">IFK Göteborg</h1>
+
 			<i class="material-icons menu-icon" onclick="toggleMenu()">menu</i>
 			<div class="menu">
 				<div class="menu-items">
@@ -31,8 +36,9 @@
 						-->
 					</ul>
 				</div>
-			</div>			
+			</div>
 		</header>
+			
 	
 		<main>
 			<%= yield %>
@@ -40,7 +46,6 @@
 
 
 		<footer></footer>
-
 	</div>
 	<script src="js/menu.js"></script>
 </body>
