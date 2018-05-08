@@ -121,6 +121,19 @@ a {
 
 @media only screen and (max-device-width: 750px){
 	
-	
-}
+	.menu {
+		width: 50vw;
+	}
 
+	.show-menu {
+		margin-left: 50vw;
+	}
+
+	html, body {
+		overflow-x: hidden;
+	}
+
+	body {
+  		position: relative
+	}
+}
