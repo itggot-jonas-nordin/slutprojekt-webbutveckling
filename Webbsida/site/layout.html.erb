@@ -11,43 +11,56 @@
 	      rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
-<!--
 	<link rel="icon" href="favicon.png" type="image/png"/>
-	<link rel="shortcut icon" href="favicon.png" type="image/png"/>
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
--->
+	<%# <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"> %>
 </head>
 
 <body>
-	<div class="container">
-		<header>
-			<h1 class="header-text">IFK Göteborg</h1>
-
-			<i class="material-icons menu-icon" onclick="toggleMenu()">menu</i>
-			<div class="menu">
-				<div class="menu-items">
-					<i class="material-icons right-arrow" onclick="toggleMenu()">keyboard_arrow_right</i>
-					<ul class="choices">
-						<li><a href="index.html">Hem</a></li>
-						<li><a href="login.html">Logga in</a></li>
-						<li><a href="omoss.html">Om oss</a></li>
-						<li><a href="">Träna</a></li>
-						<li><a href="">Priser</a></li>
-						<!--
-						<li><a href="">Kontakta oss</a></li>
-						-->
-					</ul>
-				</div>
+	<header>
+		<img src="img/ifk_gbg.png" alt="" class="logo">
+		<h1 class="header-text">IFK Göteborg</h1>
+		<i class="material-icons menu-icon" onclick="toggleMenu()">menu</i>
+		<div class="menu">
+			<div class="menu-items">
+				<i class="material-icons right-arrow" onclick="toggleMenu()">keyboard_arrow_right</i>
+				<ul class="choices">
+					<li><a href="index.html">Hem</a></li>
+					<li><a href="login.html">Logga in</a></li>
+					<li><a href="omoss.html">Om oss</a></li>
+					<li><a href="">Träna</a></li>
+					<li><a href="">Priser</a></li>
+					<!--
+					<li><a href="">Kontakta oss</a></li>
+					-->
+				</ul>
 			</div>
-		</header>
-			
-	
+		</div>
+	</header>
+	<div class="container">
+		
 		<main>
 			<%= yield %>
 		</main>
 
 
-		<footer></footer>
+		<footer>
+			<h1 class="findus">Hitta oss</h1>
+			<ul class="places">
+				<li>Ullevi</li>
+				<li>Kamratgården</li>
+				<li>Kviberg</li>
+				<li>Änglagården</li>
+			</ul>
+			<h1 class="contactus">Kontakta oss</h1>
+			<ul class="contactlist">
+				<li>Telefon: 0735-354 764</li>
+				<li>Mail: info@blavitt.com</li>
+				<li>Fax: 092834712</li>
+				<li>Instagram: IFKgbg</li>
+			</ul>
+			<img src="img/map.png" alt="Karta på adresser" class="map">
+		</footer>
 	</div>
 	<script src="js/menu.js"></script>
 </body>
