@@ -7,9 +7,6 @@ body {
 	overflow-x: hidden;
 }
 
-
-/* HEADER STYLING !!! ____________________________________________________________________________*/
-
 header {
 	position: fixed;
 	margin-top: -12vh;
@@ -125,6 +122,7 @@ a {
 	text-decoration: none;
 	color: black;	
 }
+/* MENU _______________________________________________________________________________________END */
 
 .container {
 	grid-template-columns: repeat(8, 1fr);
@@ -213,7 +211,6 @@ main {
 	text-align: center;
 }
 
-/* MENU _______________________________________________________________________________________END */
 
 .login_text {
 	grid-row: 1/2;
